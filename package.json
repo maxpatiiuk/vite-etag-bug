@@ -1,0 +1,13 @@
+{
+  "name": "vite-etag-wrong-url",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:include_first_script": "MODE=include_first_script vite"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
