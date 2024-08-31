@@ -17,21 +17,23 @@
 3. Start the dev server
 
    ```sh
-   npm run dev
+   npx vite
    ```
 
 4. Open the browser console, and see "last script" printed once (EXPECTED).
+   Important: make sure caching is NOT disabled in your browser dev tools
 
 5. Stop the dev server, and start it again with the following command:
 
    ```sh
-   npm run dev:include_first_script
+   MODE=include_first_script npx vite
    ```
 
 6. EXPECTED to see "first script" and "last script" in the console. INSTEAD, saw
    "last script" printed twice.
 
-   - Disabling browser cache shows "first script" and "last script" as expected.
+   - Disabling browser cache and reloading the page shows "first script" and
+     "last script" as expected.
 
 ## Why this is happening
 
